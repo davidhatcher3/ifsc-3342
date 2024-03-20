@@ -1,0 +1,174 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="description" content="">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+  <header class="container" id="top">
+    <!-- Main navigation -->
+    <nav class="primary">
+    <ul>  
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#education">Education</a></li>
+     </ul>  
+    </nav>
+  </header>
+  <!-- Main -->
+  <main itemscope itemtype="http://schema.org/Person" class="container">
+    <h1 class="page-title">David Hatcher</h1>
+    <section id="about">
+      <h2>Personal Details</h2>
+      <div class="bio">
+      <img itemprop="image" src="https://placehold.co/600x600?text=Headshot" alt="Your Name">
+      <p itemprop="description">Short Bio Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti maxime distinctio numquam atque? Accusantium voluptatum alias similique voluptatibus! Sunt sit reiciendis earum, harum iusto accusantium aspernatur ullam tenetur, fuga fugit, quae voluptatem! Iste aliquid veritatis accusantium et cumque minima molestiae ducimus officiis. Beatae ad consequuntur fuga deleniti atque tempore error.</p>
+      </div>  
+      <dl class="details">
+        <dt>Name</dt>
+        <dd itemprop="name">
+          <span itemprop="givenName">David</span> <span itemprop="familyName">Hatcher</span>
+        </dd>
+        <dt>Date of birth</dt>
+        <dd itemprop="birthDate"><time datetime="2000-10-12">11/05/1988</time></dd>
+        <dt>Nationality</dt>
+        <dd itemprop="nationality">United States</dd>
+        <dt>Location</dt>
+        <dd itemprop="homeLocation">Arkansas</dd>
+        <dt>Telephone</dt>
+        <dd>
+          <a itemprop="telephone" href="tel:555.555.5555">555.555.5555</a>
+        </dd>
+        <dt>Email</dt>
+        <dd>
+          <a itemprop="email" href="mailto:email@mail.com">drhatcer@ualr.edu</a>
+        </dd>
+        <dt>Address</dt>
+  
+        <dd itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+          <span itemprop="streetAddress">2801 South University</span>
+          <span itemprop="addressLocality">Little Rock</span>
+          <span itemprop="postalCode">72204</span>
+          <span itemprop="addressCountry">USA</span>
+        </dd>
+  
+      </dl>
+      <ul class="related-links">
+        <li><a itemprop="url" rel="me" href="https://github.com/davidhatcher3/ifsc-3342.git"> github</a></li>
+        <li><a itemprop="url" rel="me" href="http://linkedin.com/profile">linkedin</a></li>
+        <li><a itemprop="url" href="resume.pdf" download>pdf resume</a></li>
+      </ul>
+    </section>
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li class="skill">HTML</li>
+        <li class="skill">C++</li>
+        <li class="skill">SQL</li>
+        <li class="skill">CSS</li>
+        <li class="skill">Supervisor Experience</li>
+        <li class="skill">Customer Service</li>
+
+      </ul>
+      
+    </section>
+    <section id="experience">
+      <h2>Experience</h2>
+      <!-- current job -->
+      <article class="job">
+        <h3 itemprop="jobTitle">Customer Service Supervisor</h3>
+        <div itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
+          <span itemprop="name">Signature Aviation 1</span>
+          <span>July 2022 - Present</span>
+          <p itemprop="description">Supervise a team of Customer Service Representatives, Fuel Management Services
+            including fuel farm reconciliation, fuel receipts, Airline owner fuel management and account reconciliation.
+            Customer service and concierge type services including 
+            booking rental cars and hotel rooms. Processed transactions for Fuel and Hanger space sales.
+          </p>
+          <span itemprop="location" itemscope itemtype="http://schema.org/Place">
+            <a itemprop="url" href="https://www.signatureaviation.com/locations/LIT">Signature Aviation LIT</a>
+            <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+            <span itemprop="addressLocality">Little Rock, AR, USA</span>
+          </span>
+          </span>
+        </div>
+      </article>
+      <!-- Previous Jobs - Notice Slightly Different Format-->
+      <article class="job" itemscope itemtype="http://schema.org/Organization">
+        <h3 itemprop="name">Customer Service Supervisor</h3>
+        <span itemprop="location" itemscope itemtype="http://schema.org/Place">
+            <span itemprop="name">TACAir</span>
+        <a itemprop="url" href="https://www.thearnoldcos.com/">The Arnold Companies</a>
+        <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+              <span itemprop="addressLocality">Little Rock, AR, USA</span>
+        </span>
+        </span>
+        <div itemscope itemtype="https://schema.org/EmployeeRole">
+        <span itemprop="startDate" content="2006-02-21T20:00">February 2015</span> - 
+        <span itemprop="endDate" content="2009-02-21T20:00">July 2022</span>
+        </div>
+        <p itemprop="description">Supervised a team of Customer Service Representatives, Signatory for SIDA badges 
+          for employees and customers under TACAR sponsorship, Accounts payable clerk, Payroll, Customer account specialist,
+          Fuel inventory management. Customer service and concierge type services including 
+          booking rental cars and hotel rooms. Processed transactions for Fuel and Hanger space sales.
+        </p>
+      </article>
+     <article class="job" itemscope itemtype="http://schema.org/Organization">
+        <h3 itemprop="name">Customer Service Representative</h3>
+        <span itemprop="location" itemscope itemtype="http://schema.org/Place">
+            <span itemprop="name">Central Flying Service</span>
+        <a itemprop="url" href="https://central.aero/">CFS</a>
+        <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+              <span itemprop="addressLocality">Little Rock, AR, USA</span>
+        </span>
+        </span>
+        <div itemscope itemtype="https://schema.org/EmployeeRole">
+        <span itemprop="startDate" content="2006-02-21T20:00">October 2013</span> - 
+        <span itemprop="endDate" content="2009-02-21T20:00">February 2015</span>
+        </div>
+        <p itemprop="description">Customer service and concierge type services including 
+          booking rental cars and hotel rooms. Processed transactions for Fuel and Hanger space sales.
+        </p>
+      </article>
+    </section>
+    <section id="education">
+      <h2>Education</h2>
+      <article class="certificate" itemprop="alumniOf" itemscope itemtype="http://schema.org/EducationalOrganization">
+        <h3 itemprop="description"><abbr title="Master of Science">BA</abbr> Computer Science</h3>
+        <span itemprop="name">University of Arkansas at Little Rock</span>
+        <span itemprop="location" itemscope>Little Rock, AR, USA</span>
+        <span>2017-Present</span>
+      </article>
+    </section>
+  </main>
+  <!-- Footer -->
+  <footer>
+    <div id="copyright">
+      &copy; 2024 David Hatcher | <a href="#top">Top</a>
+    </div>
+  </footer>
+  <script src="js/app.js"></script>
+
+</body>
+
+</html>
