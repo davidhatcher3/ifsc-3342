@@ -7,6 +7,15 @@ html{
     box-sizing: inherit;
 }
 
+body{
+    background-image: URL(../img/rain.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+:root{
+    --accent-color: rgb(255, 196, 0);
+    --block-background-color: rgba(1, 25, 49,0.65);
+}
 
 
 .grid-container{
@@ -14,27 +23,26 @@ html{
     gap:20px;
     grid-template-columns: 300px 300px 300px;
     grid-template-rows: 100px 100px 100px;
-    background-color: #fff;
-    color: #444;
+    background:rgba(0, 0, 0, 0);
     list-style-type:none;
     justify-content: center;
     justify-content: space-evenly;
-    
 }
 
 .box{
-    background-color: #000;
+    display: block;
+    background-color: var(--block-background-color);
     border-radius: 5px;
-    padding: 20px;
+    border: 1px solid var(--accent-color);
+    padding: 30px;
     text-decoration: none;
-
+    text-align: center;
 }
 
 .box a {
     text-decoration: none;
     color: #fff;
-    font-size: 175%;
-    
+    font-size: 150%;
 }
 
 body h1 {
@@ -44,10 +52,11 @@ body h1 {
     text-align: center;
     font-weight: 400;
     font-variant: small-caps;
+    color: #fff;
   }
   body h1:before,
   body h1:after {
-    background-color: rgba(0, 0, 0, 0.15);
+    background-color: rgb(255, 255, 255);
     content: "\a0";
     flex-grow: 1;
     height: 1px;
@@ -62,12 +71,14 @@ body h1 {
   }
 
   
-/*Tablet*/
+
+/*Tablet
 @media screen and(min-width: 768px){
     .box{
         grid-template-columns: repeat(2, 1fr);
     }
 }
+*/
 
 /*Desktop
 @media screen and(min-width: 992px){
