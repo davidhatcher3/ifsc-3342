@@ -13,10 +13,12 @@ html{
     display:grid;
     gap:20px;
     grid-template-columns: 300px 300px 300px;
-    grid-template-rows: 300px 300px 300px;
+    grid-template-rows: 100px 100px 100px;
     background-color: #fff;
     color: #444;
-    list-style-type: none;
+    list-style-type:none;
+    justify-content: center;
+    justify-content: space-evenly;
     
 }
 
@@ -59,12 +61,13 @@ body h1 {
     margin-left: 25px;
   }
 
-/*Tablet
+  
+/*Tablet*/
 @media screen and(min-width: 768px){
     .box{
         grid-template-columns: repeat(2, 1fr);
     }
-}*/
+}
 
 /*Desktop
 @media screen and(min-width: 992px){

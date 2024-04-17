@@ -462,6 +462,7 @@ main.container{
   }
 
   main.container{
+    display:grid;
     grid-template-columns: 36.5% auto;
     grid-template-areas: 
     "title title"
@@ -471,7 +472,7 @@ main.container{
     ;
   }
 
-}
+
 
 #about{
   display:grid;
@@ -491,15 +492,14 @@ grid-area:details;
 .related-links{
 grid-area:related;
   border-bottom:1px solid #999;
-  padding-bottom:50px
+  padding-bottom:60px
 } 
 
 dl{
   display: grid;
   grid-template-rows:auto;
   grid-template-columns:8em 1fr;
-  /*shorthand*/
-  grid-template:repeat(7,60px) / 8em 1fr;
+  grid-template:repeat(7,50px) / 8em 1fr;
 }
   
   dd{
@@ -507,6 +507,11 @@ dl{
   }
   
 }
+  @media screen and (min-width:992px) {
+  
+  }
+
+
 
 /*-----edge case-----*/
 @media only screen and (max-width: 460px) {
