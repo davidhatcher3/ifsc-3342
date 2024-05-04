@@ -7,13 +7,84 @@ html {
     box-sizing: inherit;
   }
 
+  :root{
+    --main-blue: #020070;
+    --yellow-accent: #deb887;
+    --grey-accent: #708090;
+    --
+}
+/*Global*/
+body{
+  font-family: Georgia, serif;
+}
+
+a:link,
+a:visited{
+  color: var(--grey-accent);
+}
+
+nav li, footer li{
+  list-style: none;
+}
+ 
+nav{
+  position: sticky;
+  top: 0;
+  padding: 10px;
+  background: white;
+  box-shadow: rgba(252, 255, 69, 0.25) 0px 15px 20px -5px;
+}
+
+.navbar ul{
+    
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+.navbar .button{
+  display: inline-block;
+  padding: 5px 8px;
+  background-color: var(--grey-accent);
+  text-decoration: none;
+  border-radius: 4px;
+  margin-top: 10px;
+  color: #000000;
+  box-shadow: inset;
+  width: 10em;
+  text-align: center;
+  font-size: 75%;
+}
+/*Global*/
+
+  header{
+    position: sticky;
+    top: 0;
+    padding: 30px;
+    text-align: center;
+    background: var(--main-blue);
+    color: white;
+    font-size: 20px;
+  }
+
+
+  .container{
+    width: 420px;
+    margin: 0 auto;
+  }
+
+  img{
+    max-width: 100%; /*remove later for responsive img test*/
+  }
+
+/*cards*/
   .editions-container{
     margin: 0px;
     padding: 0px;
     font-family: sans-serif;
   }
 
-  /*cards*/
   .card-container{
     display: flex;
     justify-content: center;
@@ -53,7 +124,7 @@ html {
   .card-content .button{
     display: inline-block;
     padding: 8px 16px;
-    background-color: blue;
+    background-color: var(--main-blue);
     text-decoration: none;
     border-radius: 4px;
     margin-top: 16px;
