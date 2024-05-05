@@ -8,9 +8,10 @@ html {
 
   :root{
     --main-blue: #020070; 
-    --yellow-accent: #ddd3a6;;
+    --yellow-accent: #fffefb;;
     --grey-accent: #46484b;
     --gold-ish: rgb(255, 174, 0);
+    --light-blue-accent: #c3cfd4;
     
 }
 
@@ -42,7 +43,9 @@ nav li, footer li{
 nav{
   position: sticky;
   top: 0;
-  padding: 10px;
+  padding: 30px;
+  padding-top: 5px;
+  padding-bottom: 15px;
   background: white;
   box-shadow: rgba(252, 255, 49, 0.25) 0px 15px 20px -5px;
   display: flex;
@@ -81,14 +84,22 @@ nav{
     font-size: 20px;
   }
 
+  main.container{
+    padding: 30px;
+  }
 
-  .container{
-    width: 420px;
+  .chapters-container{
+    padding: 30px;
+  }
+
+  .container, .chapters-container{
+    width: 768px;
     margin: 0 auto;
   }
 
   img{
     max-width: 100%; /*remove later?*/
+    height: auto;
   }
 
   #summary{
@@ -98,6 +109,12 @@ nav{
   #history, #biography, #editions, #chapters{
     text-align: center;
     background: #ddd3a6;
+    border-radius: 10px;
+  }
+
+  #composition, #expansions, #summary{
+    text-align: center;
+    background: var(--light-blue-accent);
     border-radius: 10px;
   }
 
@@ -120,6 +137,8 @@ nav{
   .outer-chapter-list li,.inner-chapter-list li{
     margin-bottom: 5px;
   }
+
+  
 /*----------Footer----------*/
   footer{
     max-height: 12vh;
@@ -127,8 +146,9 @@ nav{
     background: var(--main-blue);
     color: white;
     font-size: 17px;
-    padding-top: 1vh;
- 
+   
+    padding: 0px 30px 0px 30px;
+
   }
 
   footer ul{
@@ -200,6 +220,17 @@ nav{
 
   /*----------Media Query----------*/
   @media all and (min-width:768px){
+
+    .navbar ul{
+      grid-gap: 25px;
+  }
+  
+    .navbar .button{
+     padding: 10px 20px;
+     width: 15em;
+     font-size: 90%;
+  }
+
     #ship{
       grid-area: ship;
     }
@@ -210,19 +241,43 @@ nav{
     #history{
       grid-area: history;
     }
+
+    #chapters{
+      grid-area: chapters;
+    }
+
+    #composition{
+      grid-area: composition;
+    }
+
+    #expansions{
+      grid-area: expansions;
+    }
   
     main.container{
       display:grid;
-      grid-gap: 10px;
+      grid-column-gap: 15px;
       grid-template-areas: 
-      "ship ship .. history"
-      "ship ship .. history"
-      "summary summary .. history"
+      "ship ship history"
+      "ship ship history"
+      "summary summary history"
+      ; 
+    }
+    
+    .chapters-container{
+      display: grid;
+      grid-column-gap: 15px;
+      grid-row-gap: 15px;
+      grid-template-columns: 2fr 1fr;
+      grid-template-areas: 
+      "chapters composition"
+      "chapters expansions"
       ;
     }
 
-    
- 
-  
+    .outer-chapter-list li,.inner-chapter-list li{
+      margin-bottom: 20px;
+    }
+
   }
 
