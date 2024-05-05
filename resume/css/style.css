@@ -323,7 +323,7 @@ main{
 }
 
 main img{
-  border-radius: 50%;
+  border-radius: 5%;
 }
 
 main h1 {
@@ -354,6 +354,7 @@ dl {
   display: grid;
   grid-template: repeat(8, auto) / 14em 1fr;
   font-size: 1rem;
+  font-size: .8rem;
 }
 
 dt {
