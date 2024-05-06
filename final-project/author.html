@@ -30,10 +30,11 @@
 </nav>
 <!--Nav-->
 
-<main class="container" itemscope itemtype="https://schema.org/Book">
+<main class="bio-container" itemscope itemtype="https://schema.org/Book">
     <link itemprop="additionalType" href="https://schema.org/CreativeWork">
 
-    <img itemprop="author" srcset="assets/img/tolkien_320.jpg 320w,
+    <div class="img-container" id="professor">
+        <img itemprop="author" srcset="assets/img/tolkien_320.jpg 320w,
                  assets/img/tolkien_620.jpg 620w,
                  assets/img/tolkien_1034.jpg 1034w,
                  assets/img/tolkien_1264.jpg 1264w"
@@ -41,17 +42,48 @@
                  src="assets/img/tolkien.jpg"
                  alt="J.R.R Tolkien"
                  >
+     </div>            
 
     <section id="biography">
         <h1 itemprop = "author">John Ronald Reuel Tolkien</h1>
         <h2>January 3, 1892 - September 2, 1973</h2>
         <p itemprop="creator">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus volutpat dui vel auctor vehicula. Vivamus tempor enim quis sollicitudin iaculis. Sed egestas orci vitae fermentum ullamcorper. Suspendisse sollicitudin placerat tempus. Pellentesque lacinia placerat aliquet. Sed tristique lobortis turpis, vel volutpat lorem euismod interdum. Donec risus est, pharetra nec neque at, iaculis ornare nisl. Quisque at mattis ex.
-            Curabitur id sapien ultricies odio accumsan facilisis in vel risus. Fusce viverra dui quis rutrum interdum. Nulla pellentesque ultricies risus, eu vestibulum ipsum posuere ut. Nunc pellentesque aliquet mi, rhoncus finibus mauris tincidunt sit amet. Nam tincidunt tortor magna, in dignissim lorem interdum id. Duis fermentum vestibulum tristique. Nulla a neque orci. Vivamus blandit, metus eget semper maximus, nisl massa convallis nibh, ut rutrum augue leo eu massa. Nunc dignissim justo ante, sed rhoncus tellus suscipit id. Mauris odio mi, tempus vitae massa eget, ultrices commodo mi. Praesent mauris massa, venenatis quis turpis et, porta varius lectus. Vestibulum tempor dictum felis id malesuada. Vivamus ut eros in nisl feugiat tempor.
-            Cras non urna gravida, scelerisque sapien quis, varius nisl. Aenean condimentum augue enim, vel gravida arcu dapibus id. Praesent finibus semper massa, ac scelerisque sapien posuere vel. Aenean ut massa lacus. Nulla facilisis dui nunc, quis auctor metus sodales non. In luctus et tellus vel egestas. Vestibulum ut tellus vel augue lobortis scelerisque. Donec blandit, justo sit amet sagittis auctor, est tellus hendrerit metus, ut cursus leo augue nec risus. Sed consectetur euismod purus. Cras ut neque ac augue venenatis vehicula.
-            Aenean dictum condimentum dapibus. Morbi pharetra quam nisi, sed dignissim arcu ultrices et. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nunc posuere, dui et pulvinar dignissim, nulla quam euismod mi, quis sagittis felis nisl id nunc. Donec ut ultricies libero. Etiam consequat mauris quam. Aliquam facilisis porta arcu sed porta. Curabitur volutpat justo ut sapien congue gravida. Ut varius mi odio, id finibus est vehicula et. Pellentesque eget purus massa. Phasellus mattis nunc a odio porttitor scelerisque non finibus nunc.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus volutpat dui vel auctor vehicula. 
+            Vivamus tempor enim quis sollicitudin iaculis. Sed egestas orci vitae fermentum ullamcorper. Suspendisse 
+            sollicitudin placerat tempus. Pellentesque lacinia placerat aliquet. Sed tristique lobortis turpis, vel volutpat lorem 
+            euismod interdum. Donec risus est, pharetra nec neque at, iaculis ornare nisl. Quisque at mattis ex.
+            Curabitur id sapien ultricies odio accumsan facilisis in vel risus. Fusce viverra dui quis rutrum interdum. 
+            Nulla pellentesque ultricies risus, eu vestibulum ipsum posuere ut. Nunc pellentesque aliquet mi, rhoncus finibus 
+            mauris tincidunt sit amet. Nam tincidunt tortor magna, in dignissim lorem interdum id. Duis fermentum vestibulum 
+            tristique. Nulla a neque orci. Vivamus blandit, metus eget semper maximus, nisl massa convallis nibh, ut rutrum a
+            ugue leo eu massa. Nunc dignissim justo ante, sed rhoncus tellus suscipit id. Mauris odio mi, tempus vitae massa eget, 
+            ultrices commodo mi. Praesent mauris massa, venenatis quis turpis et, porta varius lectus. Vestibulum tempor dictum felis 
+            id malesuada. Vivamus ut eros in nisl feugiat tempor. Cras non urna gravida, scelerisque sapien quis, varius nisl. Aenean 
+            condimentum augue enim, vel gravida arcu dapibus id. Praesent finibus semper massa, ac scelerisque sapien posuere vel. Aenean 
+            ut massa lacus. Nulla facilisis dui nunc, quis auctor metus sodales non. In luctus et tellus vel egestas. Vestibulum ut tellus 
+            vel augue lobortis scelerisque. Donec blandit, justo sit amet sagittis auctor, est tellus hendrerit metus, ut cursus leo augue nec 
+            risus. Sed consectetur euismod purus. Cras ut neque ac augue venenatis vehicula.Aenean dictum condimentum dapibus. Morbi pharetra quam nisi, 
+            sed dignissim arcu ultrices et. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nunc posuere, dui et
+            pulvinar dignissim, nulla quam euismod mi, quis sagittis felis nisl id nunc. Donec ut ultricies libero. Etiam consequat mauris quam. Aliquam 
+            facilisis porta arcu sed porta. Curabitur volutpat justo ut sapien congue gravida. Ut varius mi odio, id finibus est vehicula et. Pellentesque 
+            eget purus massa. Phasellus mattis nunc a odio porttitor scelerisque non finibus nunc.
         </p>
-    </section>    
+    </section>
+    
+    <aside id="success">
+        <h2>Success after <span itemscope itemtype="https://schema.org/Book">The Hobbit</span></h2>
+        <p id="abstract">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+            labore et dolore magna aliqua. Sapien eget mi proin sed libero. Bibendum neque egestas congue 
+            quisque egestas diam in. Tincidunt ornare massa eget egestas. Commodo odio aenean sed adipiscing 
+            diam donec adipiscing. Nibh nisl condimentum id venenatis a condimentum. Amet commodo nulla facilisi 
+            nullam vehicula ipsum. Donec pretium vulputate sapien nec sagittis aliquam. Feugiat pretium nibh 
+            ipsum consequat nisl. Amet massa vitae tortor condimentum lacinia quis. Nunc vel risus commodo viverra 
+            maecenas accumsan. Pharetra pharetra massa massa ultricies mi quis hendrerit. Pretium lectus quam id 
+            leo in vitae turpis massa sed. Eget lorem dolor sed viverra ipsum nunc aliquet.
+        </p>
+
+    </aside>
 </main>
 
     <!--footer-->

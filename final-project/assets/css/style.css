@@ -6,22 +6,24 @@ html {
   *:after {
   }
 
+/*----------CSS Custom Props----------*/
   :root{
     --main-blue: #020070; 
-    --yellow-accent: #fffefb;;
+    --yellow-accent: #ebdfb1;;
     --grey-accent: #46484b;
     --gold-ish: rgb(255, 174, 0);
     --light-blue-accent: #c3cfd4;
     
 }
+/*----------CSS Custom Props----------*/
 
 body{
-  overflow:scroll;
   margin: 0 auto;
   padding: 0;
   font-family: Georgia, serif;
 }
 
+/*----------Link Style----------*/
 a:link,
 a:visited{
   color: white;
@@ -34,6 +36,7 @@ a.ring:link{
 a.ring:visited{
   color: red;
 }
+/*----------Link Style----------*/
 
 /*----------Nav----------*/
 nav li, footer li{
@@ -88,19 +91,26 @@ nav{
     padding: 30px;
   }
 
-  .chapters-container{
+  .chapters-container, .bio-container{
     padding: 30px;
   }
 
-  .container, .chapters-container{
-    width: 768px;
+  main.container, .chapters-container, .bio-container, .container{
+    overflow: hidden;
+    width: 420px;
     margin: 0 auto;
+  }
+
+  /*----------Homepg and Author pg picture centering----------*/
+  .img-container{
+    text-align: center;
   }
 
   img{
     max-width: 100%; /*remove later?*/
     height: auto;
   }
+  /*----------Homepg and Author pg picture centering----------*/
 
   #summary{
     text-align: center;
@@ -108,16 +118,16 @@ nav{
 
   #history, #biography, #editions, #chapters{
     text-align: center;
-    background: #ddd3a6;
+    background: var(--yellow-accent);
     border-radius: 10px;
   }
 
-  #composition, #expansions, #summary{
+  #composition, #expansions, #summary, #success{
     text-align: center;
     background: var(--light-blue-accent);
     border-radius: 10px;
   }
-
+/*----------List on chapter page----------*/
   .outer-chapter-list{
     list-style-type: none;
     margin:0px auto;
@@ -137,7 +147,7 @@ nav{
   .outer-chapter-list li,.inner-chapter-list li{
     margin-bottom: 5px;
   }
-
+/*----------List on chapter page----------*/
   
 /*----------Footer----------*/
   footer{
@@ -147,7 +157,7 @@ nav{
     color: white;
     font-size: 17px;
    
-    padding: 0px 30px 0px 30px;
+    padding: 0px 30px 15px 30px;
 
   }
 
@@ -160,7 +170,7 @@ nav{
   .footlink {
     text-decoration: none;
   }
-  /*----------Footer----------*/
+/*----------Footer----------*/
 
 /*----------cards-----------*/
   .editions-container{
@@ -221,12 +231,16 @@ nav{
   /*----------Media Query----------*/
   @media all and (min-width:768px){
 
+    main.container, .chapters-container, .bio-container, .container{
+      width: 750px;
+    }
+
     .navbar ul{
       grid-gap: 25px;
   }
   
     .navbar .button{
-     padding: 10px 20px;
+     padding: 10px 12px;
      width: 15em;
      font-size: 90%;
   }
@@ -237,23 +251,28 @@ nav{
     #summary{
       grid-area: summary;
     }
-
     #history{
       grid-area: history;
     }
-
     #chapters{
       grid-area: chapters;
     }
-
     #composition{
       grid-area: composition;
     }
-
     #expansions{
       grid-area: expansions;
     }
-  
+    #professor{
+      grid-area: professor;
+    }
+    #biography{
+      grid-area: biography;
+    }
+    #success{
+      grid-area: success;
+    }
+   
     main.container{
       display:grid;
       grid-column-gap: 15px;
@@ -272,6 +291,16 @@ nav{
       grid-template-areas: 
       "chapters composition"
       "chapters expansions"
+      ;
+    }
+
+    .bio-container{
+      display: grid;
+      grid-column-gap: 15px;
+      grid-row-gap: 15px;
+      grid-template-areas: 
+      "professor biography"
+      "success biography"
       ;
     }
 
