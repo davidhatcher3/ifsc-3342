@@ -57,7 +57,8 @@ nav{
 
 .navbar ul{
     display: grid;
-    grid-gap: 10px;
+    grid-column-gap: 5%;
+    justify-content: center;
     grid-template-columns: 1fr 1fr 1fr;
     padding: 10px 5px 5px 5px;
 }
@@ -87,16 +88,11 @@ nav{
     font-size: 20px;
   }
 
-  main.container{
-    padding: 30px;
-  }
-
-  .chapters-container, .bio-container{
+  main.container, .chapters-container, .bio-container{
     padding: 30px;
   }
 
   main.container, .chapters-container, .bio-container, .container{
-    overflow: hidden;
     width: 420px;
     margin: 0 auto;
   }
@@ -131,7 +127,7 @@ nav{
   .outer-chapter-list{
     list-style-type: none;
     margin:0px auto;
-    padding: 0px;          /*Browsers add padding to list...why?*/
+    padding: 0px;          
     font-weight: bold;
     font-style: italic;
   }
@@ -228,15 +224,17 @@ nav{
   /*----------cards----------*/
 
 
-  /*----------Media Query----------*/
+  /*----------Media Query for Tablet Breakpoint----------*/
   @media all and (min-width:768px){
 
     main.container, .chapters-container, .bio-container, .container{
-      width: 750px;
+      width: 768px;
+      margin: auto;;
     }
 
     .navbar ul{
-      grid-gap: 25px;
+      grid-column-gap: 5%;
+      justify-content: center;
   }
   
     .navbar .button{
@@ -304,9 +302,55 @@ nav{
       ;
     }
 
+    
+    .inner-chapter-list, .outer-chapter-list, #chapters h1{
+      font-size: 22px;
+      
+    }
+
+
     .outer-chapter-list li,.inner-chapter-list li{
-      margin-bottom: 20px;
+      margin-bottom: 30px;
     }
 
   }
+ /*----------Media Query for Tablet Breakpoint----------*/
+
+
+  /*----------Media Query for Desktop Breakpoint----------*/
+    @media all and (min-width: 1200px){
+
+      main.container, .chapters-container, .bio-container, .container, nav{
+        width: 1200px;
+        margin: auto;
+      }
+
+      .navbar ul{
+        grid-column-gap: 25%;
+        justify-content: center;
+    }
+    
+      .navbar .button{
+       padding: 10px 12px;
+       width: 15em;
+       font-size: 90%;
+    }
+    
+    #expansions, #composition, #success, #biography, #summary, #history{
+      line-height: 2;
+    }
+
+
+    .inner-chapter-list, .outer-chapter-list, #chapters h1{
+      font-size: 25px;
+    }
+
+    .outer-chapter-list li,.inner-chapter-list li{
+      margin-bottom: 30px;
+    }
+
+
+    }
+  /*----------Media Query for Desktop Breakpoint----------*/
+  
 
